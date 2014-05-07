@@ -1,0 +1,162 @@
+body{
+	
+}
+
+#contenedor{
+
+	border-radius:2em;
+}
+#contenedor a{
+	
+}
+.clear{clear: both;}
+/*CODIGO PARA LOS BOTONES*/
+.button{
+	font:15px Calibri, Arial, sans-serif;
+	
+	/*Configuraciones de la posicion de los botones*/
+	text-decoration:none !important;
+	cursor:pointer;
+	padding:10px 20px;
+	white-space:nowrap;
+	position: relative;
+	
+	/* Sombra en el texto */
+	text-shadow:1px 1px 0 rgba(0,0,0,0.4);
+	
+	
+	/* Para los navegadores que no soportan multiples fondos */
+	background-position:bottom left;
+	background-image:url('boton.png');
+	
+	
+	/* Fondos multiples */
+	background-position:bottom left, top right, 0 0, 0 0;
+	background-clip:border-box;
+	
+	
+	/* bordes redondeados*/
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	
+	
+	/* sombra en los div */
+	-moz-box-shadow:0 0 1px #fff inset;
+	-webkit-box-shadow:0 0 1px #fff inset;
+	box-shadow:0 0 1px #fff inset;
+	
+	
+	/* propiedad transition */
+	-webkit-transition:background-position 1s;
+	-moz-transition:background-position 1s;
+	transition:background-position 1s;
+}
+
+.button:hover{
+	
+	/* Al pasar el rat�n encima del boton, activara el efecto hover y har� que la posicion del fondo cambie*/	
+	background-position:top left;
+	background-position:top left, bottom right, 0 0, 0 0;
+}
+
+.button:active{
+	/* Mover� el boton 1px al cliclearlo*/
+	bottom:-2px;
+}
+
+
+/* HAST AQUI ES LA CONFIGURACION DEL EFECTO, A CONTINUACION VIENE LA CONFIGURACION DE TAMA�O DE LOS BOTONES Y COLORES*/
+
+
+
+/* Aqui se configura el tama�o de los botones, en realidad lo que se configura es el tama�o de la letra, pero al configurar el tama�o de la letra
+el boton toma el nuevo tama�o como referencia, por eso el tama�o del boton es mayor o menor*/
+.button.grande	{ font-size:30px;}
+.button.mediano	{ font-size:18px;}
+.button.chico	{ font-size:13px;}
+
+
+/* DEFINIMOS LOS COLORES */
+
+
+/* Color Azul */
+.azul.button{
+	color:#FFF !important;
+	border:1px solid #84acc3 !important;
+	background-color: #80B7FF;
+	
+	
+	background-image:	url('boton.png'), url('boton.png'),
+						-moz-radial-gradient(	center bottom, circle,rgba(5,5,54,1) 0,rgba(189,208,244,0) 100px),
+						-moz-linear-gradient(#4fbbf7, #3faeeb);
+
+	background-image:	url('boton.png'), url('boton.png'),
+						-webkit-gradient(	radial, 50% 100%, 0, 50% 100%, 100, from(rgba(50,150,255,1)), to(rgba(50,110,255,0))),
+						-webkit-gradient(linear, 0% 0%, 0% 100%, from(#0BA2F4), to(#0982C3));
+}
+.azul.button:hover{
+	background-color:#99C5FF;
+	
+	background-image:	url('boton.png'), url('boton.png'),
+						-moz-radial-gradient(	center bottom, circle,rgba(109,217,250,1) 0,rgba(109,217,250,0) 100px),
+						-moz-linear-gradient(#63c7fe, #58bef7);
+						
+	background-image:	url('boton.png'), url('boton.png'),
+						-webkit-gradient(	radial, 50% 100%, 0, 50% 100%, 100,from(rgba(109,217,250,1)), to(rgba(109,217,250,0))),
+						-webkit-gradient(linear, 0% 0%, 0% 100%, from(#63c7fe), to(#58bef7));
+}
+
+/* Color amarillo */
+.amarillo.button{
+	color:#FFF !important;
+	border:1px solid #E07F00 !important;	
+	background-color: #FF9933;
+	
+	background-image:url('boton.png'), url('boton.png'), 
+	-webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(240,220,120,1)), to(rgba(210,190,115,0))),
+	-moz-linear-gradient(#FF9933, #F57A00);
+	
+	background-image:url('boton.png'), url('boton.png'), 
+	-webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(240,220,120,1)), to(rgba(210,190,115,0))),
+	-webkit-gradient(linear, 0% 0%, 0% 100%, from(#FF9933), to(#FF9429));
+}
+
+.amarillo.button:hover{
+	background-color:#FFB452;
+	
+	background-image:url('boton.png'), url('boton.png'), 
+	-moz-radial-gradient(center bottom, circle, rgba(250,250,56,1) 0,rgba(250,250,70,0) 100px),
+	-moz-linear-gradient(#FFB452, #FF9E1F);
+	
+	background-image:url('boton.png'), url('boton.png'), 
+	-webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(250,250,110,1)), to(rgba(250,250,120,0))),
+	-webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFB452), to(#FF9E1F));
+}
+
+/* Color rojo*/
+.rojo.button{
+	color:#FFF !important;
+	border:1px solid #bea280 !important;	
+	background-color: #EC3232;
+	
+	background-image:url('boton.png'), url('boton.png'), 
+	-moz-radial-gradient(center bottom, circle, rgba(232,45,67,1) 0,rgba(232,45,45,0) 100px),
+	-moz-linear-gradient(#F9464A, #E12B2F);
+	
+	background-image:url('boton.png'), url('boton.png'), 
+	-webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(232,45,67,1)), to(rgba(232,45,45,0))),
+	-webkit-gradient(linear, 0% 0%, 0% 100%, from(#F9464A), to(#E12B2F));
+}
+
+.rojo.button:hover{
+	background-color:#EC3232;
+	
+	background-image:url('boton.png'), url('boton.png'), 
+	-moz-radial-gradient(center bottom, circle, rgba(241,45,67,1) 0,rgba(241,30,30,0) 100px),
+	-moz-linear-gradient(#F8585B, #E5383C);
+	background-image:url('boton.png'), url('boton.png'), 
+	-webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(241,45,67,1)), to(rgba(241,30,30,0))),
+	-webkit-gradient(linear, 0% 0%, 0% 100%, from(#F8585B), to(#E5383C));
+}
+

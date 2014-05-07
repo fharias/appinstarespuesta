@@ -1,0 +1,15 @@
+a#n3sbt { 
+display:block; 
+width:150px; 
+height:50px; 
+background:url(result.png); 
+}
+
+.oculto 
+{ 
+display:none }
+
+
+a#n3sbt:link { background-position: top; } 
+a#n3sbt:hover { background-position: center!important; } 
+a#n3sbt:active { background-position: bottom!important; }
